@@ -1,0 +1,27 @@
+# Flutter
+build/
+.dart_tool/
+.packages
+.pub-preload-cache
+*.iml
+.idea/
+.metadata
+
+# Android
+local.properties
+*.keystore
+!debug.keystore
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+
+# Node
+node_modules/
+.env
+*.db
+npm-debug.log
+
+# Backend
+backend/.env
+backend/*.db

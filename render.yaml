@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: trivia-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: UNSPLASH_ACCESS_KEY
+        sync: false
+      - key: QUESTION_API_ACCESS_KEY
+        sync: false
